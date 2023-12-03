@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#202020]  bg-contain   min-h-screen"
+<body class="bg-[#202020]  bg-contain bg-fixed h-auto min-h-screen overflow-y-hidden  "
 style="background-image: url(/img/login\ background.jpg);">
 
 
@@ -56,9 +56,8 @@ style="background-image: url(/img/login\ background.jpg);">
     </nav>
 
 
-    <main  >
-
-        <a href="/index.html"><button class="text-white flex justify-evenly mt-12 bg-[#202020] border rounded-2xl px-3 mx-[25%]">
+    <main class="flex-col justify-between min-h-screen overflow-y-hidden">
+        <div><a href="/index.html"><button class="text-white flex justify-evenly mt-12 bg-[#202020] border rounded-2xl px-3 mx-[25%]">
            &#8592; back</button></a>
 
            <div class="flex items-center justify-center mt-20  ">
@@ -80,9 +79,11 @@ style="background-image: url(/img/login\ background.jpg);">
         <div class="flex items-center justify-center mt-10  ">
             <a href="/index.html"><button class="text-white text-lg text-center sm:text-2xl lg:text-3xl xl:text-4xl border-2 border-[#47A3FF] px-2 py-2 w-32 bg-[#47A3FF]">Submit</button></a>
         </div>
+    </div>
+        
    
         <!-- footer line -->
-        <div class=" w-[65%] mx-auto mt-8 ">
+        <div><div class=" w-[65%] mx-auto mt-8 ">
             <div class="h-px mx-4 bg-white"></div>
         </div>
     
@@ -93,12 +94,10 @@ style="background-image: url(/img/login\ background.jpg);">
            
     
         </footer>
+    </div>
+        
         
     </main>
-
-    
-
-    
     <script src="/index.js"></script>
 </body>
 
