@@ -8,12 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#202020]  bg-contain  overflow-y-hidden  min-h-screen"
+<body class="bg-[#202020]  bg-contain   min-h-screen"
 style="background-image: url(/img/login\ background.jpg);">
 
 
 
-    <nav class=" bg-[#202020]  max-w-full flex justify-between px-5 sm:justify-center h-12 items-center top-0 sm:h-16 md:h-20 md:space-x-10 ">
+    <nav class="  bg-[#202020]  flex justify-between px-4 sm:justify-center h-12 items-center top-0 sm:h-16 md:h-20 md:space-x-10 ">
         <div class="w-14  sm:w-16  md:w-20 ">
             <a href="/index.html"><img src="/img/CINEMAVERSE Logo.png" alt="CINEMA VERSE">
         </div></a>
@@ -36,10 +36,7 @@ style="background-image: url(/img/login\ background.jpg);">
                 <li><a href="/index.html">HOME</a></li>
                 <li><a href="/Movies/index.html">MOVIES</a></li>
                 <li><a href="/Cinemas/index.html">CINEMAS</a></li>
-                <div>
-                    <li><a href="/About us/index.html">ABOUT US</a></li>
-                    <hr class="w-13 md:w-18 lg:w-22 m-auto border-blue-800">
-                </div>
+                <li><a href="/About us/index.html">ABOUT US</a></li>
             </ul>
 
 
@@ -49,6 +46,7 @@ style="background-image: url(/img/login\ background.jpg);">
                 </div>
                 <div class=" w-8 h-8 lg:w-12 lg:h-10">
                     <a href="/Login/index.html"><img src="/img/user.png" alt="User"></a>
+                    <hr class=" m-auto border-blue-800">
                 </div>
                 <button id="open_menu" class="  text-3xl text-white sm:hidden">
                     &#9776; <!-- hamburger icon code from unicode-table.com -->
@@ -58,7 +56,7 @@ style="background-image: url(/img/login\ background.jpg);">
     </nav>
 
 
-    <main class="flex-col" >
+    <main  >
 
         <a href="/index.html"><button class="text-white flex justify-evenly mt-12 bg-[#202020] border rounded-2xl px-3 mx-[25%]">
            &#8592; back</button></a>
@@ -84,22 +82,23 @@ style="background-image: url(/img/login\ background.jpg);">
         </div>
    
         <!-- footer line -->
+        <div class=" w-[65%] mx-auto mt-8 ">
+            <div class="h-px mx-4 bg-white"></div>
+        </div>
+    
+        <footer class="  bg-fixed bottom-0 flex items-center  text-center w-1/3 mx-auto text-xs sm:text-lg text-white ">
+          
+          
+            Copyright &copy; www.MyOnlinecinema.com. All Rights Reserved!
+           
+    
+        </footer>
         
     </main>
 
     
 
-    <div class="relative w-[65%] mx-auto mt-8 ">
-        <div class="h-px mx-4 bg-white"></div>
-    </div>
-
-    <footer class=" bg-fixed bottom-0 flex items-center  text-center w-1/3 mx-auto text-xs sm:text-lg text-white ">
-      
-      
-        Copyright &copy; www.MyOnlinecinema.com. All Rights Reserved!
-       
-
-    </footer>
+    
     <script src="/index.js"></script>
 </body>
 
