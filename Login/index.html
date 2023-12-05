@@ -8,8 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#202020]       "
->
+<body class="bg-[#202020] flex flex-col  bg-contain min-h-screen  min-[1074px]:bg-cover  bg-scroll    
+" style="background-image: url(/img/login\ background.jpg);">
 
 
 
@@ -56,17 +56,20 @@
     </nav>
 
 
-    <main class="flex flex-col justify-between bg-contain  h-[91.5vh] bg-fixed  " style="background-image: url(/img/login\ background.jpg);">
-        <div class="">
+    <main class="flex-grow " >
+        
             <a href="/index.html"><button class="text-white flex justify-evenly mt-12 bg-[#202020] border rounded-2xl px-3 mx-[25%]">
            &#8592; back</button></a>
 
            <div class="flex items-center justify-center mt-20  ">
-            <a href=""><button class="text-white text-lg text-center sm:text-2xl lg:text-3xl xl:text-4xl border-2 border-[#47A3FF] px-2 py-2 w-32 bg-[#47A3FF]">LOG IN</button></a>
+            <a href="/Login/index.html"><button class="text-white text-lg text-center sm:text-2xl lg:text-3xl xl:text-4xl border-2 border-[#47A3FF] px-2 py-2 w-32 bg-[#47A3FF]">LOG IN</button></a>
+
+            <a href="/Sign-up/index.html"><button class="max-sm:hidden text-white text-lg text-center sm:text-2xl lg:text-3xl xl:text-4xl border-2 border-[#47A3FF] px-2 py-2 w-32 ">SIGN UP</button></a>
         </div>
-        <div class="flex items-center justify-center mt-8 "><input class="border border-white bg-[#202020] text-white h-10" type="email" name="" placeholder="Email"></div>
-        <div class="flex items-center justify-center mt-2 "><input class="border border-white bg-[#202020] text-white h-10" type="password" name="" placeholder="Password"></div>
-        <div class="flex items-center justify-center text-white space-x-2 mt-1 text-[10px]">
+        
+        <div class="flex items-center justify-center mt-8 "><input class="border border-white bg-[#202020] text-white h-10 md:h-12 md:w-56" type="email" name="" placeholder="Email"></div>
+        <div class="flex items-center justify-center mt-2 "><input class="border border-white bg-[#202020] text-white h-10 md:h-12 md:w-56" type="password" name="" placeholder="Password"></div>
+        <div class="flex items-center justify-center text-white space-x-2 mt-1 text-[10px] md:text-[12px]">
             <button>
                 Forgot Password
                 <hr>
@@ -80,27 +83,29 @@
         <div class="flex items-center justify-center mt-10  ">
             <a href="/index.html"><button class="text-white text-lg text-center sm:text-2xl lg:text-3xl xl:text-4xl border-2 border-[#47A3FF] px-2 py-2 w-32 bg-[#47A3FF]">Submit</button></a>
         </div>
-    </div>
-        
+    
+      
    
-        <!-- footer line -->
-        <div class="  ">
-            
-            <div class=" w-[65%] mx-auto  ">
-            <div class="h-px mx-4 bg-white"></div>
-        </div>
-    
-        <footer class="   items-center  text-center w-1/3 mx-auto text-xs sm:text-lg text-white ">
-          
-          
-            Copyright &copy; www.MyOnlinecinema.com. All Rights Reserved!
-           
-    
-        </footer>
-    </div>
+        
+       
         
         
     </main>
+    <!-- footer line -->
+    <div class=" mt-10  flex flex-col justify-end ">
+            
+        <div class=" w-[65%] sm:w-[63%] md:w-[61%] mx-auto  ">
+        <div class="h-px mx-4 bg-white"></div>
+    </div>
+
+    <footer class="     text-center w-1/3 mx-auto text-xs sm:text-lg text-white md:w-1/2 ">
+      
+      
+        Copyright &copy; www.MyOnlinecinema.com. All Rights Reserved!
+       
+
+    </footer>
+</div>
     <script src="/index.js"></script>
 </body>
 </html>
