@@ -9,8 +9,13 @@ close_menu.addEventListener('click',close);
 search.addEventListener('click',toggle);
 
 function toggle() {
-
-    input.style.display = "block"
+    if (input.style.display == 'none') {
+        input.style.display = "block"
+    }
+    else {
+        input.style.display = "none"
+    }
+    
 }
 
 
