@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    #container {
+        background-image: url(/img/buy_ticket_bg\(crop\).png);
+    }
+   @media (max-width: 639px){
+    #container{
+      background-image: none;
+      
+      
+    }
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +20,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-[#202020]  flex flex-col  max-sm:min-w-[50vw] min-h-screen min-w-[91.5wv]  min-[1074px]:bg-cover  bg-scroll    
-" style="  background-image: url(/img/buy_ticket_bg\(crop\).png);">
+<body id="container" class= "bg-[#202020]  flex flex-col  max-sm:min-w-[50vw] min-h-screen min-w-[91.5wv]  min-[1074px]:bg-cover  bg-scroll "  >
 
 
 
@@ -65,20 +76,45 @@
         <a href="/index.html"><button
                 class="max-lg:hidden text-white flex justify-evenly mt-12 bg-[#202020] border rounded-2xl px-3 mx-[5%]">
                 &#8592; back</button></a>
-        <div class="flex flex-col mx-[10%] text-lg font-bold text-white mt-16">
+        <div class="flex flex-col justify-center items-center text-lg font-bold text-white mt-16">
             <div>BUY TICKETS</div>
             <div class="h-px bg-[#47A3FF] w-28"></div>
         </div>
-        <div class="flex items-center justify-center mt-8 "><input class="border border-white bg-[#202020] text-white h-10 md:h-12 md:w-56 lg:w-72" type="datetime" name="" placeholder="datetime"></div>
-        <div class="flex items-center justify-center mt-2 lg:mt-4 "><input class="border border-white bg-[#202020] text-white h-10 md:h-12 md:w-56 lg:w-72" type="name" name="" placeholder="Last_Name"></div>
-        <div class="flex items-center justify-center mt-2 lg:mt-4 "><input class="border border-white bg-[#202020] text-white h-10 md:h-12 md:w-56 lg:w-72" type="email" name="" placeholder="Email"></div>
-        <div class="flex items-center justify-center mt-2 lg:mt-4 "><input class="border border-white bg-[#202020] text-white h-10 md:h-12 md:w-56 lg:w-72" type="number" name="" placeholder="Contact"></div>
+
+        <div class="flex flex-col mt-10">
+            <div class="flex items-center justify-center gap-4">
+                <select class="cinemaSelect h-8 w-[140px] bg-[#202020] border border-white text-white " id="cinemaSelect5">
+                    <option value=""  selected>The Arena</option>
+                    <option value="neuplex">Neuplex Cinema</option>
+                    <option value="exampleCinema1">Cinepax cinema</option>
+                    <option value="exampleCinema2">Cinegold Cinema</option>
+                    <!-- Add more cinema options as needed -->
+                  </select>
+
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="text" name="" id="">
+            </div>
+            <div class="mt-6 flex items-center justify-center gap-4  ">
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="date" name="Date" id="">
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="time" value="">
+            </div>
+
+            <div class="mt-6 flex items-center justify-center gap-4  ">
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="text" placeholder="Bank Name" id="">
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="text" placeholder="Card Number" value="">
+            </div>
+            <div class="mt-6 flex items-center justify-center gap-4  ">
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="text" placeholder="Expiry" id="">
+                <input class="bg-[#202020] h-8 w-[140px] border border-white text-white" type="number"  placeholder="CVC" value="">
+            </div>
+        </div>
+        
+        
         
 
 
 
 
-        <div class="flex items-center mt-10 mx-[10%] ">
+        <div class="flex items-center justify-center mt-10  ">
             <a href="/Seat_select/index.html"><button
                     class="text-white text-lg text-center sm:text-xl lg:text-2xl xl:text-3xl border-2 border-[#47A3FF] px-2 py-2 w-40 rounded-md bg-[#47A3FF] ">Select
                     Seats</button></a>
@@ -98,7 +134,7 @@
     <div class="h-px w-full  bg-white"></div>
 
 
-    <footer class="  mb-1 text-center w-full mx-auto text-xs sm:text-lg text-white  ">
+    <footer class="  mt-2 mb-2 text-center w-full mx-auto text-xs sm:text-lg text-white  ">
 
 
         Copyright &copy; www.MyOnlinecinema.com. All Rights Reserved!
